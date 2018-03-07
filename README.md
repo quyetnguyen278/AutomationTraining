@@ -1,0 +1,2 @@
+# AutomationTraining
+Training automation, java
