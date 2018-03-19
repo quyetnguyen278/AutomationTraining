@@ -38,7 +38,26 @@ public class Villa {
 	public String getCustomerInVilla (Customer customer) {
 		return customer.toString();
 	}
+	
 	//@Override
+	public int getNumberDateStayInResort(int money) {
+		int date = 0;
+		switch (money) {
+		case 100:
+			date = money/this.PRICE_ONEDATE;
+			break;
+		case 50:
+			date = money/this.PRICE_ONEDATE;
+			break;
+		case 30:
+			date = money/this.PRICE_ONEDATE;
+			break;
+		default:
+			date = 1;
+		}
+		return date;
+	}
+	@Override
 	public float getCostFinal() {
 		return this.PRICE_ONEDATE*this.getTotalDate();
 		

@@ -31,4 +31,9 @@ public class Customer {
 		this.setNameCustomer(nameCustomer);
 		this.setAgeCustomer(ageCustomer);
 	}
+	
+	@Override
+	public String toString() {
+		return this.nameCustomer+",\t Age: "+this.getAgeCustomer()+".";
+	}
 }
